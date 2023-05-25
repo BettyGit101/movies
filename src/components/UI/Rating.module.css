@@ -1,0 +1,13 @@
+.startsNum {
+    height: 6vh;  
+    display:flex;
+    align-items: center;  
+}
+
+.spacing {
+    margin-left:10px;
+}
+
+span {
+    margin-top: 4px;
+}

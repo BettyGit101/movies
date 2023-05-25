@@ -1,0 +1,47 @@
+.header {
+    flex: 1;
+    height:10vh;
+    width:100vw;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    position:absolute;
+    top:0;
+    background-color: white;
+    color: rgb(54, 191, 233);
+    font-weight: bold;
+}
+
+
+@media (max-width:1500px) { 
+    .header {
+        justify-content: space-around;
+        flex-direction: column;
+        height:15vh;
+    }   
+}
+
+
+.title {
+    display:flex;
+    align-items:center;
+    margin-left: 5vw;
+}
+
+.searchBar {
+    margin-right: 10vw;
+}
+
+.popcorenImage {
+    width:7vw;
+    height: 7vh;
+    margin: 0 10px 0 20px;    
+}
+
+.container {
+    display:flex;
+}
+
+.search {
+    margin-left:40vh;
+}

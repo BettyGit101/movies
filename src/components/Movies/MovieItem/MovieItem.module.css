@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+:root {
+    --bigScreenWidth:20vw;
+    --mediumScreenWidth:25vw;
+    --smallScreenWidth:35vw;
+    --varySmallScreenWidth: 45vw;
+ }
+
+.movieCard {
+    width: 14vw;
+    height: 60vh;
+    display:flex;
+    flex-direction: column;
+    margin:10px;
+}
+
+.cover {
+    width: 14vw;
+    height: 40vh;
+    margin-bottom: 2vh;
+}
+
+.title {
+    color: var(--red);
+    height: 7vh;
+    font-size: 1.5rem;
+    font-family: 'DynaPuff', cursive;
+}
+
+.readMore {
+    height: 4vh;
+    width: 14vw;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-bottom: 2rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.readMore:hover {
+    cursor: pointer;
+}
+
+
+@media (max-width:1100px) { 
+    .movieCard {
+        width: var(--bigScreenWidth);
+    }
+    .cover {
+        width: var(--bigScreenWidth);
+        height: 50vh;
+    }
+    .title { 
+        height: 8vh; 
+    }
+    .readMore {
+        width: var(--bigScreenWidth);  
+    }
+}
+
+
+@media (max-width:900px) { 
+    .movieCard {
+        width: var(--mediumScreenWidth);
+    }
+    .cover {
+        width: var(--mediumScreenWidth); 
+    } 
+    .title { 
+        height: 9vh; 
+    }
+    .readMore {
+        width:  var(--mediumScreenWidth);
+    }
+}
+
+@media (max-width:600px) { 
+    .movieCard {
+        margin-bottom: 5rem;
+        width: var(--smallScreenWidth); 
+    }
+    .cover {
+        width: var(--smallScreenWidth); 
+    }
+    .title { 
+        height: 10vh; 
+    }
+    .readMore {
+        width: var(--smallScreenWidth); 
+    }
+}
+
+@media (max-width: 450px) { 
+    .movieCard {
+        width: var(--varySmallScreenWidth); 
+    }
+    .cover {
+        width: var(--varySmallScreenWidth); 
+    }
+    .title { 
+        height: 11vh; 
+    }
+    .readMore {
+        width: var(--varySmallScreenWidth); 
+    }
+}

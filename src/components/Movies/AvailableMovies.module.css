@@ -1,0 +1,61 @@
+.movieItems {
+    padding: 2rem 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.content {
+    flex: 1;
+    min-height: 100vh;
+    width: 100vw;
+    margin-top:10vh;
+    flex-wrap:wrap;
+}
+
+@media (max-width:1500px) { 
+    .content {
+        margin-top:15vh;
+    }   
+}
+
+.spinner {
+    height:80%;
+    display:flex;
+    justify-content: center;
+    align-items: center
+}
+
+.title {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+
+@media (max-width: 1300px) {
+    .title {
+        font-size: 3rem;
+    }
+}
+@media (max-width: 700px) {
+    .title {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 500px) {
+    .title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 470px) {
+    .title {
+        font-size: 1.5rem;
+    }
+    .movieItems {
+        padding-left: 11rem;
+      
+    }
+}
